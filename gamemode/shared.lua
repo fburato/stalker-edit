@@ -12,10 +12,10 @@ TEAM_STALKER = 2
 function GM:CreateTeams()
 	
 	team.SetUp( TEAM_HUMAN, "Unit 8", Color( 80, 80, 255 ), true )
-	team.SetSpawnPoint( TEAM_HUMAN, { "info_player_human", "info_player_counterterrorist", "info_player_combine", "info_player_deathmatch" , "info_marine_spawn" } )
+	team.SetSpawnPoint( TEAM_HUMAN, { "info_marine_spawn", "info_player_human", "info_player_counterterrorist", "info_player_combine", "info_player_deathmatch" } )
 	
 	team.SetUp( TEAM_STALKER, "The Stalker", Color( 255, 80, 80 ), false )
-	team.SetSpawnPoint( TEAM_STALKER, { "info_player_stalker", "info_player_terrorist", "info_player_rebel", "info_player_start", "info_hidden_spawn" } )
+	team.SetSpawnPoint( TEAM_STALKER, { "info_hidden_spawn", "info_player_stalker", "info_player_terrorist", "info_player_rebel", "info_player_start" } )
 	
 	team.SetUp( TEAM_SPECTATOR, "Spectators", Color( 80, 255, 150 ), true )
 	team.SetSpawnPoint( TEAM_SPECTATOR, { "info_player_counterterrorist", "info_player_combine", "info_player_human", "info_player_deathmatch", "info_spectator" } ) 
